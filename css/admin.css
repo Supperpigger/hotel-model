@@ -1,0 +1,312 @@
+* {
+  margin: 0;/*外边距*/
+  padding: 0;/*被编剧*/
+  border: 0;/*边框*/
+}
+/* 总大小 */
+.project-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* 上方区域 */
+.admin-page-title-box {
+  position: absolute;
+  width: 100%;
+  min-width: 1500px;
+  height: 50px;
+  left: 235px;
+  background-color: black;
+}
+/* 左侧列表区域 */
+.admin-list-box {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  width: 235px;
+  height: 100%;
+  min-height: 500px;
+  background-color: #eaeaea;
+}
+.title {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+  text-decoration: none;
+  display:block;/*变更元素类型为块元素*/
+}
+/* 中部显示区域 */
+.admin-show-page {
+  position: absolute;
+  width: 80%;
+  height: 700px;
+  top: 100px;
+  left: 300px;
+  min-width: 1100px;
+  border-radius: 15px;
+  background-color: #cccccc;
+  border: 1px solid #EAEAEA;
+}
+.admin-show-title-box {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 15px;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #000000;/*下边框*/
+}
+.admin-show-page1 {
+  width: 90%;
+  height: 580px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background-color: #000000;
+}
+.admin-show-page1-totle {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.hotel-server-show-list {
+  width: 98%;
+  margin: 0 auto;
+  height: 520px;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.hotel-all {
+  display: block;
+}
+.hotel-once {
+  display: none;
+}
+.hotel-double {
+  display: none;
+}
+.hotel-vip {
+  display: none;
+}
+.hotel-list-click {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  /* color: #FFFFFF; */
+  color: #CCCCCC;
+  cursor: pointer;
+  border-right: 1px solid #FFFFFF;
+}
+.hotel-list-click:last-child{
+  border-right: 0px;
+}
+.hotel-list-click:first-child{
+  color: #FFFFFF;
+}
+.function-list-box {
+  width: 90%;
+  /* background-color: red; */
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.function-list {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border-bottom: 1px solid #FFFFFF;
+}
+.function-list p {
+  font-size: 18px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.function-list:hover {
+}
+.add-hotel-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.add-box {
+  position: absolute;
+  width: 310px;
+  height: 370px;
+  background-color: #CCCCCC;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+}
+.add-box-top {
+  width: 100%;
+  height: 30px;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: rgba(0, 0, 0, 1);
+}
+.add-box-top .name {
+  float: left;
+  margin-left: 20px;
+}
+.add-box-top .close {
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.add-box-body {
+  width: 100%;
+}
+.hotel-style {
+  margin-top: 50px;
+  width: 100px;
+  height: 25px;
+}
+.hotel-style-p {
+  float: left;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+.hotel-prise-add {
+  clear: both;
+  float: left;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-left: 50px;
+  /* margin-right: 40px; */
+}
+.hotel-prise-num {
+  margin-top: 50px;
+  width: 100px;
+  height: 25px;
+}
+.hotel-prise-vip-add {
+  clear: both;
+  float: left;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+.hotel-prise-num-vip {
+  margin-top: 50px;
+  width: 100px;
+  height: 25px;
+}
+.add-hotel-right {
+  width: 150px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-weight: 700;
+  border-radius: 15px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+
+.hotel-text {
+  float: left;
+  width: 120px;
+  height: 185px;
+  margin-left: 44px;
+  margin-top: 15px;
+  background-color: aqua;
+}
+.hotel-img {
+  width: 96px;
+  height: 96px;
+  margin: 2px auto;
+  background-color: yellow;
+}
+.hotel-sstyle {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+.hotel-prise {
+  float: left;
+  height: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.hotel-prises {
+  float: right;
+  margin-top: -15px;
+  height: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  /* margin-top: 5px; */
+}
+.hotel-prise-vip {
+  float: left;
+  height: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.hotel-prises-vip {
+  float: right;
+  height: 14px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+  margin-top: 5px;
+}
+.hotel-right {
+  clear: both;
+  float: left;
+  width: 90px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: black;
+  color: #FFFFFF;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.hotel-pointer {
+    cursor: pointer;
+}
+.hotel-pointer:hover {
+    color: #CCCCCC;
+}
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.hotel-head {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #cccccc;
+}
+.hotel-header-box {
+    /* width: 1200px; */
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: red;
+}
+.hotel-header-logo {
+    display: inline-block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: yellow;
+    margin-top: 5px;
+}
+.hotel-header-name {
+    display: inline-block;
+    float: left;
+    line-height: 70px;
+    font-size: 36px;
+    color: black;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.hotel-header-reserve, .hotel-header-index {
+    display: inline-block;
+    float: left;
+    line-height: 70px;
+    font-size: 18px;
+    color: black;
+    margin-left: 30px;
+}
+.hotel-header-index {
+    color: #CCCCCC;
+}
+.hotel-user-msg {
+    float: right;
+    height: 70px;
+}
+.hotel-user-login-yes {
+    /* display: block; */
+    display: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 70px;
+}
+.hotel-user-login-yes1 {
+    /* display: block; */
+    display: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 70px;
+}
+.hotel-user-login-none {
+    display: block;
+    /* display: none; */
+}
+.hotel-user-login-none p {
+    display: inline-block;
+    line-height: 70px;
+}
+.hotel-index-msg {
+    display: block;
+}
+.hotel-swiper-model-box {
+    width: 100%;
+    height: 572px;
+    background-color: blueviolet;
+}
+.swiper-container {
+    /* width: 600px; */
+    height: 572px;
+}
+.swiper-button-prev {
+    left: 15%!important;
+}
+.swiper-button-next {
+    right: 15%!important;
+}
+.hotel-middle-msg {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: cadetblue;
+}
+.hotel-reserve-msg {
+    display: none;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    /* background-color: red; */
+}
+.hotel-reserve-page-top {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+.hotel-reserve-select {
+    float: left;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-reserve-select-top {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-reserve-select-msg {
+    width: 100%;
+}
+.hotel-reserve-select-msg p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.hotel-reserve-select-msg span {
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.hotel-reserve-data {
+    float: right;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-server-house-list {
+    width: 1200px;
+    margin-top: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-reserve-data-top {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-reserve-data-list-box {
+    width: 540px;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgba(98, 188, 248, 0.2);
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+.hotel-reserve-data-list {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.hotel-reserve-data-list1 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.hotel-reserve-data-list2 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.hotel-reserve-data-list3 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.hotel-reserve-data-list4 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.hotel-reserve-data-list5 {
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #CCCCCC;
+    margin-top: 10px;
+}
+.data-list-left-span{
+	color: #FFF;
+}
+.hotel-reserve-data-list:first-child {
+    /* display: inline; */
+    margin-top: 0px;
+}
+.data-list-left {
+    clear: both;
+    float: left;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.hotel-list-left {
+    float: left;
+    width: 200px;
+    height: 70px;
+}
+.hotel-list-right {
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-left: 40px;
+    color: #FFF;
+}
+.hotel-reserve-data-list span {
+    float: left;
+    display: inline-block;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.hotel-server-house-select-tab {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.hotel-list-click {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 40px;
+    /* color: #FFFFFF; */
+    color: #CCCCCC;
+    cursor: pointer;
+    border-right: 1px solid #FFFFFF;
+}
+.hotel-list-click:last-child{
+    border-right: 0px;
+}
+.hotel-list-click:first-child{
+    color: #FFFFFF;
+}
+.hotel-server-show-list {
+    width: 100%;
+    padding-top: 10px;
+    max-height: 500px;
+    padding-bottom: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.hotel-all {
+    display: block;
+}
+.hotel-once {
+    display: none;
+}
+.hotel-double {
+    display: none;
+}
+.hotel-vip {
+    display: none;
+}
+.hotel-footer {
+    width: 100%;
+    height: 56px;
+}
+.hotel-footer-msg {
+    width: 1200px;
+    margin: 0 auto;
+}
+.hotel-copyright {
+    font-size: 16px;
+    color: #CCCCCC;
+    text-align: center;
+    /* margin-top: 5px; */
+    line-height: 56px;
+}
+
+.hotel-login-box {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 500;
+}
+.hotel-login-box .box-name {
+    float: left;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.hotel-login-box .box-close {
+    float: right;
+    font-size: 18px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.hotel-login {
+    width: 400px;
+    height: 215px;
+    top: 120px;
+    background-color: #FFFFFF;
+}
+.hotel-login-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+.hotel-register {
+    width: 400px;
+    height: 280px;
+    top: 120px;
+    background-color: #FFFFFF;
+}
+
+.hotel-register1 {
+    width: 400px;
+    height: 280px;
+    top: 120px;
+    background-color: #FFFFFF;
+    display:none;
+}
+.hotel-register-header {
+    width: 100%;
+    height: 50px;
+    background-color: #CCCCCC;
+}
+.login-body {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 62px;
+    /* background-color: red; */
+}
+.login-username-p {
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.login-username {
+    float: right;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.login-password-p {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
+.login-password {
+    float: right;
+    margin-top: 20px;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.login-submit {
+    width: 80%;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.register-body {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 140px;
+}
+#register-body1 {
+    width: 1300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 140px;
+    display:block;
+}
+.register-username-p {
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.register-username {
+    float: right;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.register-password-p {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
+.register-password {
+    float: right;
+    margin-top: 20px;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.register-mail-p {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 18px;
+}
+.register-mail {
+    float: right;
+    margin-top: 20px;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.register-phone-p {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+}
+.register-phone {
+    float: right;
+    margin-top: 20px;
+    height: 18px;
+    width: 75%;
+    border: 1px solid #CCCCCC;
+}
+.register-submit {
+    width: 80%;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.register-submit1 {
+    width: 80%;
+    height: 30px;
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 18px;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.user-change-hotel {
+    float: left;
+    margin-top: 2.5px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.user-goback-hotel {
+    float: left;
+    margin-top: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    color: #FFFFFF;
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.hotel-text {
+    float: left;
+    width: 120px;
+    height: 185px;
+    margin-left: 44px;
+    margin-top: 15px;
+    background-color: aqua;
+}
+.hotel-img {
+    width: 96px;
+    height: 96px;
+    margin: 2px auto;
+    background-color: yellow;
+}
+.hotel-sstyle {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+}
+.hotel-prise {
+    float: left;
+    height: 14px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+.hotel-prises {
+    float: right;
+    margin-top: -15px;
+    height: 14px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    /* margin-top: 5px; */
+}
+.hotel-prise-vip {
+    float: left;
+    height: 14px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+.hotel-prises-vip {
+    float: right;
+    height: 14px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    margin-top: 5px;
+}
+.hotel-right {
+    clear: both;
+    float: left;
+    width: 90px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.h1{
+	width:1000px;
+	height:500px;
+	background:gray;	
+}

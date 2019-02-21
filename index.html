@@ -1,15 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hotel-model</title>
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <title>酒店</title>
 </head>
+
 <body>
-    <div class=""></div>
+    <header class="hotel-head">
+        <div class="hotel-header-box">
+            <div class="hotel-header-logo">
+
+            </div>
+            <p class="hotel-header-name">XXXX酒店</p>
+            <p class="hotel-header-index hotel-pointer">首页</p>
+            <p class="hotel-header-reserve hotel-pointer">酒店预订</p>
+            <div class="hotel-user-msg">
+                <div class="hotel-user-login-yes" style="display:none;">
+                    欢迎，管理者admin
+                </div>
+                <div class="hotel-user-login-yes1" style="display:none;">
+                    欢迎，顾客npm
+                </div>
+                <div class="hotel-user-login-none">
+                    <p class="hotel-pointer login">登录</p>
+                    <p>|</p>
+                    <p class="hotel-pointer register">注册</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hotel-index-msg">
+        <div class="hotel-swiper-model-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                   <img src="img/1.png" alt=""  class="swiper-slide"/>
+                   <img src="img/2.png" alt=""  class="swiper-slide"/>
+                   <img src="img/3.png"  class="swiper-slide"/>
+                   <img src="img/4.png" alt=""  class="swiper-slide"/>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 如果需要滚动条 -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </div>
+        <div class="hotel-middle-msg" style="position:relative;margin-top:40px;">
+            <p style="color:#000;font-size:30px;font-weight:bold;padding-top:130px;padding-left:30px;">人生就是旅行</p>
+            <p style="color:#000;font-size:30px;font-weight:bold;padding-top:20px;padding-left:30px;">每一段的风景都是不同的主题</p>
+            <p style="color:#000;font-size:20px;padding-top:30px;padding-left:30px;">趁年轻去看看外面的世界</p>
+            <p style="color:#000;font-size:20px;padding-top:20px;padding-left:30px;">让青春在旅途留下难忘的记忆！守护并陪伴着城战。</p>
+            <p style="color:#000;font-size:20px;padding-top:20px;padding-left:30px;">一点一滴中坐享天伦之乐！遇见质朴的乡村田野。</p>
+            <p  style="color:#000;font-size:20px;padding-top:20px;padding-left:30px;">寻回那份久违的初心</p>
+            <div ><img src="img/4.png" alt="" style="position:absolute;margin-top:-320px;margin-left:640px;"/></div>
+        </div>
+    </div>
+    <div class="hotel-reserve-msg">
+        <div class="hotel-reserve-page-top">
+            <div class="hotel-reserve-select">
+                <div class="hotel-reserve-select-top">
+                    个人信息
+                </div>
+                <div class="hotel-reserve-select-msg">
+                    <p>用户名</p> <span class="user-name"></span>
+                    <p style="letter-spacing: 16px">邮箱</p> <span class="user-mail"></span>
+                    <p>手机号</p> <span class="user-phone"></span>
+                </div>
+            </div>
+            <div class="hotel-reserve-data">
+                <div class="hotel-reserve-data-top">
+                    已有订单
+                </div>
+                <div class="hotel-reserve-data-list-box">
+                        <div class="hotel-reserve-data-list1">
+                            <div class="hotel-list-left">
+                                <p class="data-list-left" style="letter-spacing: 32px">类别</p> <span class="data-list-left-span">总统房间</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">日期</p> <span class="data-list-left-span">2019-02-14</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">时间</p> <span class="data-list-left-span">10</span>
+                            </div>
+                            <div class="hotel-list-right">
+                                <p class="data-list-left" style="margin-right: 32px">房间编号</p> <span>103</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">总价</p> <span>3600</span>
+                            </div>
+                            <div class="user-change-hotel"  id="huanfang">
+                                换房
+                            </div>
+                            <div class="user-goback-hotel" id="tuifang1">
+                                退房
+                            </div>
+                        </div>
+                        <div class="hotel-reserve-data-list2">
+                            <div class="hotel-list-left">
+                                <p class="data-list-left" style="letter-spacing: 32px">类别</p> <span class="data-list-left-span">总统房间</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">日期</p> <span class="data-list-left-span">2019-02-14</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">时间</p> <span class="data-list-left-span">10</span>
+                            </div>
+                            <div class="hotel-list-right">
+                                <p class="data-list-left" style="margin-right: 32px">房间编号</p> <span>103</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">总价</p> <span>3600</span>
+                            </div>
+                            <div class="user-change-hotel"  id="huanfang">
+                                换房
+                            </div>
+                            <div class="user-goback-hotel" id="tuifang2">
+                                退房
+                            </div>
+                        </div>
+                        <div class="hotel-reserve-data-list3">
+                            <div class="hotel-list-left">
+                                <p class="data-list-left" style="letter-spacing: 32px">类别</p> <span class="data-list-left-span">总统房间</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">日期</p> <span class="data-list-left-span">2019-02-14</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">时间</p> <span class="data-list-left-span">10</span>
+                            </div>
+                            <div class="hotel-list-right">
+                                <p class="data-list-left" style="margin-right: 32px">房间编号</p> <span>103</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">总价</p> <span>3600</span>
+                            </div>
+                            <div class="user-change-hotel"  id="huanfang">
+                                换房
+                            </div>
+                            <div class="user-goback-hotel" id="tuifang3">
+                                退房
+                            </div>
+                        </div>
+                        <div class="hotel-reserve-data-list4">
+                            <div class="hotel-list-left">
+                                <p class="data-list-left" style="letter-spacing: 32px">类别</p> <span class="data-list-left-span">总统房间</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">日期</p> <span class="data-list-left-span">2019-02-14</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">时间</p> <span class="data-list-left-span">10</span>
+                            </div>
+                            <div class="hotel-list-right">
+                                <p class="data-list-left" style="margin-right: 32px">房间编号</p> <span>103</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">总价</p> <span>3600</span>
+                            </div>
+                            <div class="user-change-hotel" id="huanfang">
+                                换房
+                            </div>
+                            <div class="user-goback-hotel" id="tuifang4">
+                                退房
+                            </div>
+                        </div>
+                        <div class="hotel-reserve-data-list5">
+                            <div class="hotel-list-left">
+                                <p class="data-list-left" style="letter-spacing: 32px">类别</p> <span class="data-list-left-span">总统房间</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">日期</p> <span class="data-list-left-span">2019-02-14</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">时间</p> <span class="data-list-left-span">10</span>
+                            </div>
+                            <div class="hotel-list-right">
+                                <p class="data-list-left" style="margin-right: 32px">房间编号</p> <span>103</span>
+                                <p class="data-list-left" style="letter-spacing: 32px">总价</p> <span>3600</span>
+                            </div>
+                            <div class="user-change-hotel"  id="huanfang">
+                                换房
+                            </div>
+                            <div class="user-goback-hotel" id="tuifang5">
+                                退房
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="hotel-server-house-list">
+            <div class="hotel-server-house-select-tab">
+                <div class="hotel-list-all hotel-list-click">
+                    全部
+                </div>
+                <div class="hotel-list-once hotel-list-click">
+                    单人房
+                </div>
+                <div class="hotel-list-double hotel-list-click">
+                    双人房
+                </div>
+                <div class="hotel-list-vip hotel-list-click">
+                    总统房
+                </div>
+            </div>
+            <div class="hotel-server-show-list hotel-all">
+                <div class="hotel-text">
+                    <div class="hotel-img">
+
+                    </div>
+                    <p class="hotel-sstyle">单人房</p>
+                    <p class="hotel-prise" style="letter-spacing: 28px">价格</p> <span class="hotel-prises">￥300</span>
+                    <p class="hotel-prise-vip">vip-价格</p> <span class="hotel-prises-vip">￥300</span>
+                    <div class="hotel-right">
+                        预约
+                    </div>
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+                <div class="hotel-text">
+                    
+                </div>
+            </div>
+            <div class="hotel-server-show-list hotel-once">
+                单人
+            </div>
+            <div class="hotel-server-show-list hotel-double">
+                双人
+            </div>
+            <div class="hotel-server-show-list hotel-vip">
+                总统
+            </div>
+        </div>
+    </div>
+    <footer class="hotel-footer">
+        <div class="hotel-footer-msg">
+            <p class="hotel-copyright">
+                版权所有 @ 2019 XXXX酒店有限公司
+            </p>
+        </div>
+    </footer>
+
+    <div class="hotel-login-box">
+        <div class="hotel-login absolute-center">
+            <div class="hotel-login-header">
+                <p class="box-name">登录</p>
+                <p class="box-close">X</p>
+            </div>
+            <div class="login-body">
+                <p class="login-username-p">用户名</p>
+                <input class="login-username" value="">
+                <p class="login-password-p">密码</p>
+                <input class="login-password" type="password" value="">
+            </div>
+            <div class="login-submit">
+                登录
+            </div>
+        </div>
+
+        <div class="hotel-register absolute-center">
+            <div class="hotel-register-header">
+                <p class="box-name">注册</p>
+                <p class="box-close">X</p>
+            </div>
+            <div class="register-body">
+                <p class="register-username-p">用户名</p>
+                <input class="register-username" value="">
+                <p class="register-password-p">密码</p>
+                <input class="register-password" type="password" value="">
+                <p class="register-mail-p">邮箱</p>
+                <input class="register-mail"  type="email" value="">
+                <p class="register-phone-p">手机号</p>
+                <input class="register-phone" type="tel" value="">
+            </div>
+            
+            <div class="register-submit">
+                注册
+            </div>
+        </div>
+    </div>
+         <div class="hotel-register1 absolute-center">
+            <div class="hotel-register-header">
+                <p class="box-name" style="color:#fff;text-align:center;">换房</p>
+            </div>
+            <div class="register-body">
+                <p class="register-username-p">用户名</p>
+                <input class="register-username" value="">
+                <p class="register-password-p">密码</p>
+                <input class="register-password" type="password" value="">
+                <p class="register-mail-p">邮箱</p>
+                <input class="register-mail"  type="email" value="">
+                <p class="register-phone-p">手机号</p>
+                <input class="register-phone" type="tel" value="">
+            </div>
+             
+            <div class="register-submit1" id="suer">
+                确定
+            </div>
+        </div>
 </body>
-<script src="js/JQuery.js"></script>
-<script src="js/api.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/swiper.min.js"></script>
 <script src="js/index.js"></script>
+<script>//这行代码是jquery!
+	$("#tuifang1").click(function(){
+		$(".hotel-reserve-data-list1").css("display","none");
+		alert("退房成功");
+	})
+	$("#tuifang2").click(function(){
+		$(".hotel-reserve-data-list2").css("display","none");
+		alert("退房成功");
+	})
+	$("#tuifang3").click(function(){
+		$(".hotel-reserve-data-list3").css("display","none");
+		alert("退房成功");
+	})
+	$("#tuifang4").click(function(){
+		$(".hotel-reserve-data-list4").css("display","none");
+		alert("退房成功");
+	})
+	$("#tuifang5").click(function(){
+		$(".hotel-reserve-data-list5").css("display","none");
+		alert("退房成功");
+	})
+	$("#huanfang").click(function(){
+		$('.hotel-register1').css('display',"block");
+	})
+	$('#suer').click(function(){
+		$('.hotel-register1').css('display',"none");
+		alert("换房成功");
+	})
+</script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        //   direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+		speed : 2000,
+		autoplay:{
+			delay:1000,
+			stopOnLastSlide:false,
+			disableOnInteraction:true,
+		},
+		pagination:'.swier-pagination',
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        //   scrollbar: {
+        //     el: '.swiper-scrollbar',
+        //   },
+    })
+</script>
+<script>
+    // 创建Base64对象
+    var Base64 = {
+        _keyStr: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+        encode: function (e) {
+            var t = "";
+            var n, r, i, s, o, u, a;
+            var f = 0;
+            e = Base64._utf8_encode(e);
+            while (f < e.length) {
+                n = e.charCodeAt(f++);
+                r = e.charCodeAt(f++);
+                i = e.charCodeAt(f++);
+                s = n >> 2;
+                o = (n & 3) << 4 | r >> 4;
+                u = (r & 15) << 2 | i >> 6;
+                a = i & 63;
+                if (isNaN(r)) {
+                    u = a = 64
+                } else if (isNaN(i)) {
+                    a = 64
+                }
+                t = t + this._keyStr.charAt(s) + this._keyStr.charAt(o) + this._keyStr.charAt(u) + this._keyStr
+                    .charAt(a)
+            }
+            return t
+        },
+        decode: function (e) {
+            var t = "";
+            var n, r, i;
+            var s, o, u, a;
+            var f = 0;
+            e = e.replace(/[^A-Za-z0-9+/=]/g, "");
+            while (f < e.length) {
+                s = this._keyStr.indexOf(e.charAt(f++));
+                o = this._keyStr.indexOf(e.charAt(f++));
+                u = this._keyStr.indexOf(e.charAt(f++));
+                a = this._keyStr.indexOf(e.charAt(f++));
+                n = s << 2 | o >> 4;
+                r = (o & 15) << 4 | u >> 2;
+                i = (u & 3) << 6 | a;
+                t = t + String.fromCharCode(n);
+                if (u != 64) {
+                    t = t + String.fromCharCode(r)
+                }
+                if (a != 64) {
+                    t = t + String.fromCharCode(i)
+                }
+            }
+            t = Base64._utf8_decode(t);
+            return t
+        },
+        _utf8_encode: function (e) {
+            e = e.replace(/rn/g, "n");
+            var t = "";
+            for (var n = 0; n < e.length; n++) {
+                var r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r)
+                } else if (r > 127 && r < 2048) {
+                    t += String.fromCharCode(r >> 6 | 192);
+                    t += String.fromCharCode(r & 63 | 128)
+                } else {
+                    t += String.fromCharCode(r >> 12 | 224);
+                    t += String.fromCharCode(r >> 6 & 63 | 128);
+                    t += String.fromCharCode(r & 63 | 128)
+                }
+            }
+            return t
+        },
+        _utf8_decode: function (e) {
+            var t = "";
+            var n = 0;
+            var r = c1 = c2 = 0;
+            while (n < e.length) {
+                r = e.charCodeAt(n);
+                if (r < 128) {
+                    t += String.fromCharCode(r);
+                    n++
+                } else if (r > 191 && r < 224) {
+                    c2 = e.charCodeAt(n + 1);
+                    t += String.fromCharCode((r & 31) << 6 | c2 & 63);
+                    n += 2
+                } else {
+                    c2 = e.charCodeAt(n + 1);
+                    c3 = e.charCodeAt(n + 2);
+                    t += String.fromCharCode((r & 15) << 12 | (c2 & 63) << 6 | c3 & 63);
+                    n += 3
+                }
+            }
+            return t
+        }
+    }
+    // 定义字符串
+    var string = 'Hello';
+    // 加密
+    var encodedString = Base64.encode(string);
+    console.log(encodedString); // 输出: "SGVsbG8gV29ybGQh"
+    // 解密
+    var decodedString = Base64.decode(encodedString);
+    console.log(decodedString); // 输出: "Hello World!"
+</script>
+
 </html>
